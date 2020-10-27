@@ -16,7 +16,7 @@ describe('server', () => {
   });
 
   describe('POST /publish', () => {
-    it.only('sends a message to all subscribers', async () => {
+    it('sends a message to all subscribers', async () => {
       const message = 'text';
 
       const subscribers = Promise.all([
